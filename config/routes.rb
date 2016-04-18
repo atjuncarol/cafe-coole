@@ -1,4 +1,24 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
+  namespace :u do
+  get 'articles/index'
+  end
+
+  namespace :home do
+  get 'withdrawals/index'
+  end
+
+  namespace :home do
+  get 'comments/index'
+  end
+
+  namespace :home do
+  get 'articles/index'
+  end
+  
+  root 'welcome#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
