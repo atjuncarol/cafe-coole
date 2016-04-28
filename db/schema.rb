@@ -11,9 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160418090257) do
 
   create_table "articles", force: :cascade do |t|
+=======
+ActiveRecord::Schema.define(version: 20160421035421) do
+
+  create_table "messages", force: :cascade do |t|
+>>>>>>> 3b900ea67316d1ab3b6fac37bfef19b43879449a
     t.string   "name"
     t.string   "body"
     t.datetime "created_at", null: false

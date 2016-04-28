@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 
 
   <% if content_for?(:head) %>
@@ -27,3 +28,30 @@
 </body>
 </html>
 
+=======
+  <title>Cafe Coole</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Cafe Coole</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+        <% if notice %>
+          <div class="alert alert-info">
+        <%= notice %>
+           </div>
+       <% end %>
+    
+    <%= yield %>
+  </div>
+</body>
+</html>
+>>>>>>> 3b900ea67316d1ab3b6fac37bfef19b43879449a

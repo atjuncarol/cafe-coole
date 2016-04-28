@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   
 
   namespace :u do
@@ -19,6 +20,12 @@ Rails.application.routes.draw do
   
   root 'welcome#index'
 
+=======
+  root 'messages#index'
+  resources :messages 
+  resources :messages , except: [:index, :new]
+  
+>>>>>>> 3b900ea67316d1ab3b6fac37bfef19b43879449a
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
