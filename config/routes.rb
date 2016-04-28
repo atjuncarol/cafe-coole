@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  
 
   namespace :u do
   get 'articles/index'
